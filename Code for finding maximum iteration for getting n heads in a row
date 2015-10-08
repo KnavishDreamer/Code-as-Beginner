@@ -1,0 +1,29 @@
+import random
+
+def GetMaxTotal(n):
+    total_count = 0
+    head_count = 0
+    while head_count < n:
+        flip = random.randint(0,1)
+        total_count = total_count + 1
+        if flip:
+            head_count = head_count + 1
+            #print "You have got a head"
+        else:
+            head_count = 0
+            #print "You have got a tail"
+
+    return "The probablity of getting", n , "heads consequetively is " ,head_count / float(total_count)
+
+print GetMaxTotal(2);
+print GetMaxTotal(3);
+print GetMaxTotal(4);
+print GetMaxTotal(5);
+print GetMaxTotal(6);
+print GetMaxTotal(7);
+print GetMaxTotal(8);
+print GetMaxTotal(9);
+print GetMaxTotal(10);
+print GetMaxTotal(11);
+print GetMaxTotal(12);
+print GetMaxTotal(13);
