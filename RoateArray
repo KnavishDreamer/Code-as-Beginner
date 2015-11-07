@@ -1,0 +1,10 @@
+def Rotate(array, d):
+    d = d % len(array)
+
+    rotate= []
+    for items in array[d:len(array)]:
+        rotate.append(items)
+    for items in array[:d]:
+        rotate.append(items)
+    return rotate
+print Rotate([1,2,3,4,5,6,7],4)
