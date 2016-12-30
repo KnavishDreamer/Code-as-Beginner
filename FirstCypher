@@ -15,6 +15,7 @@ def Cipher(string):
             new += items
     return new
 
+
 a = Cipher('''script is the programming language developed for web.
 Hence, it would be better to learn about HTML and CSS before learning Javascript.
 However, for me I first took a online course on Javascript on CodeAcademy and I then switched to learning HTML and CSS. 
@@ -22,5 +23,10 @@ I think you cannot learn Javascript as once. Javascript has become a massive too
 And, try to learn about Jquery , AJAX and like that.
 You can then become a front end developer.''')
 
+print('\nAfter Ciphering : \n ')
+print a
+print ('\n\n')
 b = Cipher(a)
+
+print ('After Deciphering : \n ') 
 print b
